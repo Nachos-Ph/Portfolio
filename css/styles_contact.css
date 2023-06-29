@@ -22,7 +22,7 @@
   .topnav a {
 	float: left;
 	display: block;
-	color: #f4f2ec;
+	color: #F4F2EC;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -44,9 +44,7 @@
   }
   
   @media screen and (max-width: 650px) {
-	.topnav a:not(:first-child) {
-	  display: none;
-	}
+	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 	  float: right;
 	  display: block;
@@ -54,9 +52,7 @@
   }
   
   @media screen and (max-width: 650px) {
-	.topnav.responsive {
-	  position: relative;
-	}
+	.topnav.responsive {position: relative;}
 	.topnav.responsive .icon {
 	  position: absolute;
 	  right: 0;
@@ -67,6 +63,34 @@
 	  display: block;
 	  text-align: left;
 	}
+  }
+  
+  .topnav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	transition: background-color 0.5s ease; 
+  }
+  
+  .topnav::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	z-index: -1;
+	transition: background-color 0.5s ease; 
+  }
+  
+  .topnav.responsive {
+	background-color: #25b1b1; 
+  }
+  
+  .topnav.responsive::before {
+	background-color: #25b1b1; 
   }
   
   .container {
