@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles_index.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<title>Homepage</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>I am Miguel Nicos Baltazar</h1>
+    <p>A 1st Year BSIT Student</p>
+    <button class="btn-hero here" onclick="goToAboutPage()">About Me Here</button>
+
+  </div>
+</div>
+
+<div class="container-gallery">
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/Baltazar_Miguel Nicos.jpg" alt="Nicos" style="width:100%">
+        <div class="container">
+          <h2>Photos Of Nicos</h2>
+          <p>Different Photos Of Me</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/smile.jpg" alt="Nicos" style="width:100%">
+        <div class="container">
+            <h2>Part Of My Life</h2>
+          <p>At School, Outside, and Anywhere</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/pfizer.jpg" alt="Nicos" style="width:100%">
+        <div class="container">
+          <h2>Curious?</h2>
+          <a href="gallery.html" class="view">Click Here To View More</a>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-proj">
+    <img src="images/Harry Potter.png" alt="Harry Potter" style="width:100%;">
+    <div class="text-block-proj">
+      <h4 style="margin-left: 35%;">Projects</h4>
+      <button class="btn-proj proj" onclick="goToProjectsPage()">More Projects Here</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Creator: Miguel Nicos Baltazar<br>
+    <a href="contact.html">Contact Me Here</a></p>
+    <br>
+  </footer>
+  
+
+<script src="javascript/script_index.js"></script>
+
+</body>
+</html>
