@@ -157,7 +157,8 @@
 
   @media screen and (max-width: 650px){
 	footer {
-		margin-top: 25%;
+		position: relative;
+		bottom: -110px;
 	}
   }
   
